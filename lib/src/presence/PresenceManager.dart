@@ -9,6 +9,9 @@ import 'package:xmpp_stone/src/presence/PresenceApi.dart';
 class PresenceManager implements PresenceApi {
   final Connection _connection;
 
+  late StreamSubscription<XmppConnectionState> _xmppConnectionStateSubscription;
+  late StreamSubscription<PresenceStanza?> _presenceStanzaSubscription;
+
   List<PresenceStanza> requests = <PresenceStanza>[];
 
   final StreamController<PresenceData> _presenceStreamController = StreamController<PresenceData>.broadcast();
@@ -40,7 +43,7 @@ class PresenceManager implements PresenceApi {
     return _errorStreamController.stream;
   }
 
-  static Map<Connection, PresenceManager> instances = <Connection, PresenceManager>{};
+  static Map<Connection, PresenceManager> instances = {};
 
   static PresenceManager getInstance(Connection connection) {
     var manager = instances[connection];
@@ -51,16 +54,23 @@ class PresenceManager implements PresenceApi {
     return manager;
   }
 
+  static void removeInstance(Connection connection) {
+    instances[connection]?._presenceStanzaSubscription.cancel();
+    instances[connection]?._xmppConnectionStateSubscription.cancel();
+    instances.remove(connection);
+  }
+
   PresenceManager(this._connection) {
-    _connection.inStanzasStream
+    _presenceStanzaSubscription = _connection.inStanzasStream
         .where((abstractStanza) => abstractStanza is PresenceStanza)
-        .map((stanza) => stanza as PresenceStanza)
+        .map((stanza) => stanza as PresenceStanza?)
         .listen(_processPresenceStanza);
-    _connection.connectionStateStream.listen(_connectionStateHandler);
+    _xmppConnectionStateSubscription =
+        _connection.connectionStateStream.listen(_connectionStateHandler);
   }
 
   @override
-  void acceptSubscription(Jid to) {
+  void acceptSubscription(Jid? to) {
     var presenceStanza = PresenceStanza.withType(PresenceType.SUBSCRIBED);
     presenceStanza.id = _getPresenceId();
     presenceStanza.toJid = to;
@@ -120,8 +130,8 @@ class PresenceManager implements PresenceApi {
     _connection.writeStanza(presenceStanza);
   }
 
-  void _processPresenceStanza(PresenceStanza presenceStanza) {
-    if (presenceStanza.type == null) {
+  void _processPresenceStanza(PresenceStanza? presenceStanza) {
+    if (presenceStanza!.type == null) {
       //presence event
       _presenceStreamController.add(PresenceData(presenceStanza.show, presenceStanza.status, presenceStanza.fromJid));
     } else {
