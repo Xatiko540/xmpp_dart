@@ -1,6 +1,6 @@
 name: xmpp_client_web
 
-description: "Xmpp Stone is lightweight XMPP client library written completely in Dart."
+description: "Xmpp Stone is lightweight XMPP client web library written completely in Dart."
 
 version: 0.5.1-dev.1
 
@@ -12,6 +12,10 @@ environment:
 #dependencies:
 #  path: ^1.4.1
 dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+      sdk: flutter
   xml: ^6.5.0
   cryptoutils: ^0.5.0
   crypto: ^3.0.5
@@ -29,3 +33,12 @@ dependencies:
 dev_dependencies:
   test: ^1.25.2
   mockito: ^5.4.4
+
+
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: XmppClientWebPlugin
+        fileName: src/web/xmpp_client_web.dart

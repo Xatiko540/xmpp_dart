@@ -1,7 +1,7 @@
 ## XmppStone
 
 Lightweight XMPP client library written completely in Dart.
-My intention is to write simple to use library for future XMPP client based on Flutter.
+My intention is to write simple to use library for future XMPP client web based on Flutter.
 
 __Supported documents:__
  - __RFC6120__: Extensible Messaging and Presence Protocol (XMPP): Core 
@@ -34,7 +34,7 @@ __Actively working on:__
 ## Usage
 
 ```dart
-import 'package:xmpp_stone/xmpp_stone.dart' as xmpp;
+import 'package:xmpp_client_web/xmpp_stone.dart' as xmpp;
 
 main() {
   xmpp.XmppAccountSettings accountSettings = xmpp.XmppAccountSettings.fromJid('nick@damain.com/resource', 'password');
