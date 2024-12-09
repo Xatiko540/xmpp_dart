@@ -1,11 +1,11 @@
 import 'dart:async';
 
-import 'package:xmpp_stone/src/elements/XmppAttribute.dart';
-import 'package:xmpp_stone/src/elements/forms/FieldElement.dart';
-import 'package:xmpp_stone/src/elements/forms/QueryElement.dart';
-import 'package:xmpp_stone/src/elements/nonzas/Nonza.dart';
-import 'package:xmpp_stone/src/elements/stanzas/AbstractStanza.dart';
-import 'package:xmpp_stone/src/elements/stanzas/IqStanza.dart';
+import 'package:xmpp_client_web/src/elements/XmppAttribute.dart';
+import 'package:xmpp_client_web/src/elements/forms/FieldElement.dart';
+import 'package:xmpp_client_web/src/elements/forms/QueryElement.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/AbstractStanza.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/IqStanza.dart';
 
 import '../../Connection.dart';
 import '../Negotiator.dart';

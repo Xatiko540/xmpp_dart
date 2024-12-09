@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:image/image.dart' as img;
-import 'package:xmpp_stone/src/elements/XmppAttribute.dart';
-import 'package:xmpp_stone/src/elements/XmppElement.dart';
+import 'package:xmpp_client_web/src/elements/XmppAttribute.dart';
+import 'package:xmpp_client_web/src/elements/XmppElement.dart';
 
 class VCard extends XmppElement {
   var _imageData;

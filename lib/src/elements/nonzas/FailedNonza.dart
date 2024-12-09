@@ -1,4 +1,4 @@
-import 'package:xmpp_stone/src/elements/nonzas/Nonza.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
 
 class FailedNonza extends Nonza {
   static String NAME = 'failed';

@@ -1,8 +1,8 @@
-import 'package:xmpp_stone/src/Connection.dart';
-import 'package:xmpp_stone/src/data/Jid.dart';
-import 'package:xmpp_stone/src/elements/stanzas/AbstractStanza.dart';
-import 'package:xmpp_stone/src/elements/stanzas/MessageStanza.dart';
-import 'package:xmpp_stone/src/messages/MessageApi.dart';
+import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/data/Jid.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/AbstractStanza.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/MessageStanza.dart';
+import 'package:xmpp_client_web/src/messages/MessageApi.dart';
 
 class MessageHandler implements MessageApi {
   static Map<Connection, MessageHandler> instances = {};

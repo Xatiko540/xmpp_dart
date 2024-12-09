@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:xmpp_stone/src/elements/stanzas/AbstractStanza.dart';
-import 'package:xmpp_stone/src/elements/stanzas/IqStanza.dart';
-import 'package:xmpp_stone/src/Connection.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/AbstractStanza.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/IqStanza.dart';
+import 'package:xmpp_client_web/src/Connection.dart';
 
 class PingManager {
 

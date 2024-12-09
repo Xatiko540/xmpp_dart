@@ -1,16 +1,16 @@
 import 'dart:async';
 
 import 'package:collection/collection.dart' show IterableExtension;
-import 'package:xmpp_stone/src/elements/nonzas/ANonza.dart';
-import 'package:xmpp_stone/src/elements/nonzas/EnableNonza.dart';
-import 'package:xmpp_stone/src/elements/nonzas/EnabledNonza.dart';
-import 'package:xmpp_stone/src/elements/nonzas/FailedNonza.dart';
-import 'package:xmpp_stone/src/elements/nonzas/Nonza.dart';
-import 'package:xmpp_stone/src/elements/nonzas/RNonza.dart';
-import 'package:xmpp_stone/src/elements/nonzas/ResumeNonza.dart';
-import 'package:xmpp_stone/src/elements/nonzas/ResumedNonza.dart';
-import 'package:xmpp_stone/src/elements/nonzas/SMNonza.dart';
-import 'package:xmpp_stone/src/features/streammanagement/StreamState.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/ANonza.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/EnableNonza.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/EnabledNonza.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/FailedNonza.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/RNonza.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/ResumeNonza.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/ResumedNonza.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/SMNonza.dart';
+import 'package:xmpp_client_web/src/features/streammanagement/StreamState.dart';
 
 import '../../../xmpp_stone.dart';
 import '../Negotiator.dart';

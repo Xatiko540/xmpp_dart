@@ -1,15 +1,15 @@
 import 'package:xml/xml.dart' as xml;
-import 'package:xmpp_stone/src/data/Jid.dart';
-import 'package:xmpp_stone/src/elements/XmppAttribute.dart';
-import 'package:xmpp_stone/src/elements/XmppElement.dart';
-import 'package:xmpp_stone/src/elements/forms/FieldElement.dart';
-import 'package:xmpp_stone/src/elements/forms/XElement.dart';
-import 'package:xmpp_stone/src/elements/stanzas/AbstractStanza.dart';
-import 'package:xmpp_stone/src/elements/stanzas/MessageStanza.dart';
-import 'package:xmpp_stone/src/elements/stanzas/PresenceStanza.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/Feature.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/Identity.dart';
-import 'package:xmpp_stone/src/parser/IqParser.dart';
+import 'package:xmpp_client_web/src/data/Jid.dart';
+import 'package:xmpp_client_web/src/elements/XmppAttribute.dart';
+import 'package:xmpp_client_web/src/elements/XmppElement.dart';
+import 'package:xmpp_client_web/src/elements/forms/FieldElement.dart';
+import 'package:xmpp_client_web/src/elements/forms/XElement.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/AbstractStanza.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/MessageStanza.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/PresenceStanza.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/Feature.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/Identity.dart';
+import 'package:xmpp_client_web/src/parser/IqParser.dart';
 
 import '../logger/Log.dart';
 

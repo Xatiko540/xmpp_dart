@@ -1,16 +1,16 @@
 import 'dart:async';
 
 import 'package:collection/collection.dart' show IterableExtension;
-import 'package:xmpp_stone/src/Connection.dart';
-import 'package:xmpp_stone/src/elements/XmppAttribute.dart';
-import 'package:xmpp_stone/src/elements/XmppElement.dart';
-import 'package:xmpp_stone/src/elements/nonzas/Nonza.dart';
-import 'package:xmpp_stone/src/elements/stanzas/AbstractStanza.dart';
-import 'package:xmpp_stone/src/elements/stanzas/IqStanza.dart';
-import 'package:xmpp_stone/src/features/Negotiator.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/Feature.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/Identity.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/ServiceDiscoverySupport.dart';
+import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/elements/XmppAttribute.dart';
+import 'package:xmpp_client_web/src/elements/XmppElement.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/AbstractStanza.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/IqStanza.dart';
+import 'package:xmpp_client_web/src/features/Negotiator.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/Feature.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/Identity.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/ServiceDiscoverySupport.dart';
 
 class ServiceDiscoveryNegotiator extends Negotiator {
   static const String NAMESPACE_DISCO_INFO =

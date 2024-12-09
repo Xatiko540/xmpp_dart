@@ -5,15 +5,15 @@ import 'package:collection/collection.dart' show IterableExtension;
 import 'package:synchronized/synchronized.dart';
 import 'package:universal_io/io.dart';
 import 'package:xml/xml.dart' as xml;
-import 'package:xmpp_stone/src/ReconnectionManager.dart';
-import 'package:xmpp_stone/src/elements/nonzas/Nonza.dart';
-import 'package:xmpp_stone/src/features/ConnectionNegotatiorManager.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/CarbonsNegotiator.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/MAMNegotiator.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/ServiceDiscoveryNegotiator.dart';
-import 'package:xmpp_stone/src/features/streammanagement/StreamManagmentModule.dart';
-import 'package:xmpp_stone/src/parser/StanzaParser.dart';
-import 'package:xmpp_stone/xmpp_stone.dart';
+import 'package:xmpp_client_web/src/ReconnectionManager.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
+import 'package:xmpp_client_web/src/features/ConnectionNegotatiorManager.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/CarbonsNegotiator.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/MAMNegotiator.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/ServiceDiscoveryNegotiator.dart';
+import 'package:xmpp_client_web/src/features/streammanagement/StreamManagmentModule.dart';
+import 'package:xmpp_client_web/src/parser/StanzaParser.dart';
+import 'package:xmpp_client_web/xmpp_stone.dart';
 
 import 'connection/XmppWebsocketApi.dart'
     if (dart.library.io) 'connection/XmppWebsocketIo.dart'

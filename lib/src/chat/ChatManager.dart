@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:xmpp_stone/xmpp_stone.dart';
+import 'package:xmpp_client_web/xmpp_stone.dart';
 
 class ChatManager {
   static Map<Connection, ChatManager> instances = {};

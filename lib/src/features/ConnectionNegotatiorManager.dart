@@ -2,19 +2,19 @@ import 'dart:async';
 import 'dart:collection';
 
 import 'package:xml/xml.dart' as xml;
-import 'package:xmpp_stone/src/Connection.dart';
-import 'package:xmpp_stone/src/account/XmppAccountSettings.dart';
-import 'package:xmpp_stone/src/elements/nonzas/Nonza.dart';
-import 'package:xmpp_stone/src/features/BindingResourceNegotiator.dart';
-import 'package:xmpp_stone/src/features/Negotiator.dart';
-import 'package:xmpp_stone/src/features/SessionInitiationNegotiator.dart';
-import 'package:xmpp_stone/src/features/StartTlsNegotatior.dart';
-import 'package:xmpp_stone/src/features/sasl/SaslAuthenticationFeature.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/CarbonsNegotiator.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/Feature.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/MAMNegotiator.dart';
-import 'package:xmpp_stone/src/features/servicediscovery/ServiceDiscoveryNegotiator.dart';
-import 'package:xmpp_stone/src/features/streammanagement/StreamManagmentModule.dart';
+import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/account/XmppAccountSettings.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
+import 'package:xmpp_client_web/src/features/BindingResourceNegotiator.dart';
+import 'package:xmpp_client_web/src/features/Negotiator.dart';
+import 'package:xmpp_client_web/src/features/SessionInitiationNegotiator.dart';
+import 'package:xmpp_client_web/src/features/StartTlsNegotatior.dart';
+import 'package:xmpp_client_web/src/features/sasl/SaslAuthenticationFeature.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/CarbonsNegotiator.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/Feature.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/MAMNegotiator.dart';
+import 'package:xmpp_client_web/src/features/servicediscovery/ServiceDiscoveryNegotiator.dart';
+import 'package:xmpp_client_web/src/features/streammanagement/StreamManagmentModule.dart';
 
 import '../logger/Log.dart';
 

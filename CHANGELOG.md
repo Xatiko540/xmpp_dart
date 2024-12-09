@@ -1,3 +1,7 @@
+## 0.5.1-dev.1
+
+- Revert the version *1.18.0* of `collection web` lib;
+
 ## 0.4.4-dev.7
 
 - Revert the version *1.18.0* of `collection` lib;

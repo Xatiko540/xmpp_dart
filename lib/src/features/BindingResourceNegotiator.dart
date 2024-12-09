@@ -1,14 +1,14 @@
 import 'dart:async';
 
 import 'package:collection/collection.dart' show IterableExtension;
-import 'package:xmpp_stone/src/Connection.dart';
-import 'package:xmpp_stone/src/data/Jid.dart';
-import 'package:xmpp_stone/src/elements/XmppAttribute.dart';
-import 'package:xmpp_stone/src/elements/XmppElement.dart';
-import 'package:xmpp_stone/src/elements/nonzas/Nonza.dart';
-import 'package:xmpp_stone/src/elements/stanzas/AbstractStanza.dart';
-import 'package:xmpp_stone/src/elements/stanzas/IqStanza.dart';
-import 'package:xmpp_stone/src/features/Negotiator.dart';
+import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/data/Jid.dart';
+import 'package:xmpp_client_web/src/elements/XmppAttribute.dart';
+import 'package:xmpp_client_web/src/elements/XmppElement.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/AbstractStanza.dart';
+import 'package:xmpp_client_web/src/elements/stanzas/IqStanza.dart';
+import 'package:xmpp_client_web/src/features/Negotiator.dart';
 
 class BindingResourceConnectionNegotiator extends Negotiator {
   final Connection _connection;

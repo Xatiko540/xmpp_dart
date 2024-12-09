@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:xmpp_stone/src/elements/nonzas/Nonza.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
 
 abstract class Negotiator {
   static int defaultPriorityLevel = 1000;

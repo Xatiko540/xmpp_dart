@@ -1,5 +1,5 @@
-import 'package:xmpp_stone/src/elements/XmppAttribute.dart';
-import 'package:xmpp_stone/src/elements/nonzas/Nonza.dart';
+import 'package:xmpp_client_web/src/elements/XmppAttribute.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
 
 class EnableNonza extends Nonza {
   static String NAME = 'enable';

@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:xmpp_stone/src/Connection.dart';
-import 'package:xmpp_stone/src/elements/XmppAttribute.dart';
-import 'package:xmpp_stone/src/elements/nonzas/Nonza.dart';
-import 'package:xmpp_stone/src/features/sasl/AbstractSaslHandler.dart';
-import 'package:xmpp_stone/src/features/sasl/SaslAuthenticationFeature.dart';
+import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/elements/XmppAttribute.dart';
+import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
+import 'package:xmpp_client_web/src/features/sasl/AbstractSaslHandler.dart';
+import 'package:xmpp_client_web/src/features/sasl/SaslAuthenticationFeature.dart';
 
 import '../../logger/Log.dart';
 

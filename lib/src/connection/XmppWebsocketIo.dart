@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:universal_io/io.dart';
 
-import 'package:xmpp_stone/src/connection/XmppWebsocketApi.dart';
+import 'package:xmpp_client_web/src/connection/XmppWebsocketApi.dart';
 
 export 'XmppWebsocketApi.dart';
 

@@ -1,7 +1,7 @@
-import 'package:xmpp_stone/src/data/Jid.dart';
-import 'package:xmpp_stone/src/elements/XmppAttribute.dart';
-import 'package:xmpp_stone/src/elements/XmppElement.dart';
-import 'package:xmpp_stone/src/parser/StanzaParser.dart';
+import 'package:xmpp_client_web/src/data/Jid.dart';
+import 'package:xmpp_client_web/src/elements/XmppAttribute.dart';
+import 'package:xmpp_client_web/src/elements/XmppElement.dart';
+import 'package:xmpp_client_web/src/parser/StanzaParser.dart';
 import 'package:xml/xml.dart' as xml;
 
 class Nonza extends XmppElement {
