@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/Сonnection.dart';
 import 'package:xmpp_client_web/src/chat/Message.dart';
 import 'package:xmpp_client_web/src/data/Jid.dart';
 import 'package:xmpp_client_web/src/elements/XmppAttribute.dart';

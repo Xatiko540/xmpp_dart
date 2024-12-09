@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:xmpp_client_web/src/elements/stanzas/AbstractStanza.dart';
 import 'package:xmpp_client_web/src/elements/stanzas/IqStanza.dart';
-import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/Сonnection.dart';
 
 class PingManager {
 

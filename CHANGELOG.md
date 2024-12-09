@@ -1,4 +1,10 @@
-## 0.5.1-dev.1
+## 0.5.2-dev.9
+- Added support for web platform.
+- Fixed lifecycle warning.
+- Improved error handling in web implementation.
+
+
+## 0.5.1-dev.8
 
 - Revert the version *1.18.0* of `collection web` lib;
 

@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:tuple/tuple.dart';
 
-import '../../Connection.dart';
+import '../../Сonnection.dart';
 import '../../data/privacy_list.dart';
 import '../../data/privacy_list_item.dart';
 import '../../data/privacy_lists.dart';

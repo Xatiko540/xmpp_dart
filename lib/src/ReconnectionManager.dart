@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/Сonnection.dart';
 import 'logger/Log.dart';
 
 class ReconnectionManager {

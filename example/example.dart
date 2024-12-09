@@ -1,9 +1,4 @@
 import 'dart:async';
-import 'dart:convert';
-
-import 'package:console/console.dart';
-import 'package:image/image.dart' as image;
-import 'package:universal_io/io.dart';
 import 'package:xmpp_client_web/src/logger/Log.dart';
 import 'package:xmpp_client_web/xmpp_stone.dart' as xmpp;
 
@@ -52,11 +47,6 @@ void main(List<String> arguments) async {
 
   // Отправка сообщения
   sendMessageSafely(messageHandler, receiverJid, 'Hello from xmpp_stone!');
-
-  // Чтение ввода из консоли
-  getConsoleStream().listen((String str) {
-    sendMessageSafely(messageHandler, receiverJid, str);
-  });
 
   // Подключение
   connection.connect();
@@ -126,9 +116,6 @@ class ExampleConnectionStateChangedListener
     // Получение VCard контакта
     var receiverVCard = await vCardManager.getVCardFor(receiverJid);
     Log.d(TAG, 'Receiver info: ${receiverVCard.buildXmlString()}');
-    if (receiverVCard.image != null) {
-      saveImage(receiverVCard.image!, 'receiver_avatar.jpg');
-    }
 
     // Подключение слушателя присутствия
     var presenceManager = xmpp.PresenceManager.getInstance(_connection);
@@ -141,18 +128,6 @@ class ExampleConnectionStateChangedListener
   void onPresence(xmpp.PresenceData event) {
     Log.d(TAG, 'Presence event from ${event.jid!.fullJid!}: ${event.showElement}');
   }
-
-  void saveImage(image.Image img, String fileName) {
-    var file = File(fileName)..writeAsBytesSync(image.encodeJpg(img));
-    Log.d(TAG, 'Image saved to: ${file.path}');
-  }
-}
-
-Stream<String> getConsoleStream() {
-  return Console.adapter.byteStream().map((bytes) {
-    var str = ascii.decode(bytes);
-    return str.trim();
-  });
 }
 
 class ExampleMessagesListener implements xmpp.MessagesListener {

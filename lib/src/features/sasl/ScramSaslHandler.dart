@@ -5,7 +5,7 @@ import 'dart:math';
 import 'package:crypto/crypto.dart';
 import 'package:cryptoutils/utils.dart';
 import 'package:crypto/crypto.dart' as crypto;
-import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/Сonnection.dart';
 import 'package:xmpp_client_web/src/elements/XmppAttribute.dart';
 import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
 import 'package:unorm_dart/unorm_dart.dart' as unorm;

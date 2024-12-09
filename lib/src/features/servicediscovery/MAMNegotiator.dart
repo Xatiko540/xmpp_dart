@@ -7,7 +7,7 @@ import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
 import 'package:xmpp_client_web/src/elements/stanzas/AbstractStanza.dart';
 import 'package:xmpp_client_web/src/elements/stanzas/IqStanza.dart';
 
-import '../../Connection.dart';
+import '../../Сonnection.dart';
 import '../Negotiator.dart';
 import 'Feature.dart';
 

@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:cryptoutils/utils.dart';
-import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/Сonnection.dart';
 import 'package:xmpp_client_web/src/elements/XmppAttribute.dart';
 import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
 import 'package:xmpp_client_web/src/features/sasl/AbstractSaslHandler.dart';

@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:collection';
 
 import 'package:xml/xml.dart' as xml;
-import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/Сonnection.dart';
 import 'package:xmpp_client_web/src/account/XmppAccountSettings.dart';
 import 'package:xmpp_client_web/src/elements/nonzas/Nonza.dart';
 import 'package:xmpp_client_web/src/features/BindingResourceNegotiator.dart';

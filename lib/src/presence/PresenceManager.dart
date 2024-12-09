@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:xmpp_client_web/src/Connection.dart';
+import 'package:xmpp_client_web/src/Сonnection.dart';
 import 'package:xmpp_client_web/src/data/Jid.dart';
 import 'package:xmpp_client_web/src/elements/stanzas/AbstractStanza.dart';
 import 'package:xmpp_client_web/src/elements/stanzas/PresenceStanza.dart';
@@ -133,7 +133,9 @@ class PresenceManager implements PresenceApi {
   void _processPresenceStanza(PresenceStanza? presenceStanza) {
     if (presenceStanza!.type == null) {
       //presence event
-      _presenceStreamController.add(PresenceData(presenceStanza.show, presenceStanza.status, presenceStanza.fromJid));
+      _presenceStreamController.add(
+        PresenceData(presenceStanza.show, presenceStanza.status, presenceStanza.fromJid),
+      );
     } else {
       switch (presenceStanza.type) {
         case PresenceType.SUBSCRIBE:
@@ -146,8 +148,10 @@ class PresenceManager implements PresenceApi {
           _handleErrorEvent(presenceStanza);
           break;
         case PresenceType.UNSUBSCRIBE:
+        // Add specific handling for UNSUBSCRIBE if necessary
           break;
         case PresenceType.PROBE:
+        // Add specific handling for PROBE if necessary
           break;
         case PresenceType.SUBSCRIBED:
           var subscriptionEvent = SubscriptionEvent();
@@ -162,8 +166,16 @@ class PresenceManager implements PresenceApi {
           _subscribeStreamController.add(subscriptionEvent);
           break;
         case PresenceType.UNAVAILABLE:
-          //presence event
-          _presenceStreamController.add(PresenceData(PresenceShowElement.XA, 'Unavailable', presenceStanza.fromJid));
+        //presence event
+          _presenceStreamController.add(
+            PresenceData(PresenceShowElement.XA, 'Unavailable', presenceStanza.fromJid),
+          );
+          break;
+        case null:
+        // Handle null case explicitly
+          break;
+        default:
+        // Handle any unexpected values
           break;
       }
     }
