@@ -1,4 +1,4 @@
-## XmppStone
+## Xmpp Stone Web
 
 Lightweight XMPP client library written completely in Dart.
 My intention is to write simple to use library for future XMPP client web based on Flutter.
