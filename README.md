@@ -3,6 +3,9 @@
 Lightweight XMPP client library written completely in Dart.
 My intention is to write simple to use library for future XMPP client web based on Flutter.
 
+
+forked from vukoye/xmpp_dart implementation of web support for the platform
+
 __Supported documents:__
  - __RFC6120__: Extensible Messaging and Presence Protocol (XMPP): Core 
  - __RFC6121__: Extensible Messaging and Presence Protocol (XMPP): Instant Messaging and Presence

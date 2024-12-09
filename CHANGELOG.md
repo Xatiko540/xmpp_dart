@@ -1,3 +1,8 @@
+## 0.5.3-dev.10
+- Fixed: Lifecycle warnings and type compatibility issues.
+- Improved: Error handling for web implementation.
+- Updated: File naming to align with Dart conventions.
+
 ## 0.5.2-dev.9
 - Added support for web platform.
 - Fixed lifecycle warning.
